@@ -1,0 +1,6 @@
+framework module Pods_Zwallet {
+  umbrella header "Pods-Zwallet-umbrella.h"
+
+  export *
+  module * { export * }
+}

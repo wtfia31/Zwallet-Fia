@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0300585E2A874996002DBA5E /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0300585D2A874996002DBA5E /* NewPasswordViewController.swift */; };
+		030058612A875F8C002DBA5E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030058602A875F8C002DBA5E /* Home.storyboard */; };
+		030058632A875F98002DBA5E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030058622A875F98002DBA5E /* HomeViewController.swift */; };
+		0300586A2A87BC63002DBA5E /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030058682A87BC63002DBA5E /* HistoryTableViewCell.swift */; };
+		0300586B2A87BC63002DBA5E /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030058692A87BC63002DBA5E /* HistoryTableViewCell.xib */; };
+		030058702A889313002DBA5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0300586F2A889313002DBA5E /* ProfileViewController.swift */; };
+		030058762A88AC71002DBA5E /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030058752A88AC71002DBA5E /* OTPViewController.swift */; };
+		0329C7382A8A01C400D10E10 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C7372A8A01C400D10E10 /* LoginModel.swift */; };
+		0329C7422A8A0A0600D10E10 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C7412A8A0A0600D10E10 /* LoginResponse.swift */; };
+		0329C7442A8A0A2700D10E10 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C7432A8A0A2700D10E10 /* AuthApi.swift */; };
+		0329C7462A8A0E0F00D10E10 /* AuthApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C7452A8A0E0F00D10E10 /* AuthApiServices.swift */; };
+		0329C74C2A8A25C800D10E10 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C74B2A8A25C800D10E10 /* SignUpResponse.swift */; };
+		032B62082A873D4200F0D895 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032B62072A873D4200F0D895 /* ForgotViewController.swift */; };
+		037C22DD2A9086600010A5E4 /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C22DC2A9086600010A5E4 /* LogoutResponse.swift */; };
+		037C22DF2A908A350010A5E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C22DE2A908A350010A5E4 /* Constant.swift */; };
+		037C22E42A9094360010A5E4 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C22E32A9094360010A5E4 /* ProfileResponse.swift */; };
+		037C22E62A9094A20010A5E4 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037C22E52A9094A20010A5E4 /* ProfileModel.swift */; };
+		03859B622A8277C7000031C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03859B612A8277C7000031C2 /* AppDelegate.swift */; };
+		03859B642A8277C7000031C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03859B632A8277C7000031C2 /* SceneDelegate.swift */; };
+		03859B662A8277C7000031C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03859B652A8277C7000031C2 /* ViewController.swift */; };
+		03859B692A8277C7000031C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03859B672A8277C7000031C2 /* Main.storyboard */; };
+		03859B6B2A8277C8000031C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03859B6A2A8277C8000031C2 /* Assets.xcassets */; };
+		03859B6E2A8277C8000031C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03859B6C2A8277C8000031C2 /* LaunchScreen.storyboard */; };
+		0387D1032A8F540900EA1173 /* ForgotPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387D1022A8F540900EA1173 /* ForgotPasswordResponse.swift */; };
+		03A927EA2A828A1C00C5F416 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A927E92A828A1C00C5F416 /* LoginViewController.swift */; };
+		03A927EC2A82905100C5F416 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A927EB2A82905100C5F416 /* CustomButton.swift */; };
+		03A927F02A829C0600C5F416 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A927EF2A829C0600C5F416 /* RegisterViewController.swift */; };
+		03A927F42A82B09900C5F416 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A927F32A82B09900C5F416 /* RoundedView.swift */; };
+		03AC4A392A8F2F5D0006E5E4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AC4A382A8F2F5D0006E5E4 /* StringExtension.swift */; };
+		9E4DB1FF3D9CA6D6F7F9BF70 /* Pods_Zwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB3502351546A6B3DEBA46 /* Pods_Zwallet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0300585D2A874996002DBA5E /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		030058602A875F8C002DBA5E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		030058622A875F98002DBA5E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		030058682A87BC63002DBA5E /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		030058692A87BC63002DBA5E /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		0300586F2A889313002DBA5E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		030058752A88AC71002DBA5E /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		0329C7372A8A01C400D10E10 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		0329C7412A8A0A0600D10E10 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		0329C7432A8A0A2700D10E10 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		0329C7452A8A0E0F00D10E10 /* AuthApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiServices.swift; sourceTree = "<group>"; };
+		0329C74B2A8A25C800D10E10 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		032B62072A873D4200F0D895 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		037C22DC2A9086600010A5E4 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
+		037C22DE2A908A350010A5E4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		037C22E32A9094360010A5E4 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
+		037C22E52A9094A20010A5E4 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		03859B5E2A8277C7000031C2 /* Zwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03859B612A8277C7000031C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03859B632A8277C7000031C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03859B652A8277C7000031C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03859B682A8277C7000031C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03859B6A2A8277C8000031C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03859B6D2A8277C8000031C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03859B6F2A8277C8000031C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0387D1022A8F540900EA1173 /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponse.swift; sourceTree = "<group>"; };
+		03A927E92A828A1C00C5F416 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03A927EB2A82905100C5F416 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		03A927EF2A829C0600C5F416 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		03A927F32A82B09900C5F416 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		03AC4A382A8F2F5D0006E5E4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		595523033C145AD8018A7D97 /* Pods-Zwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zwallet.debug.xcconfig"; path = "Target Support Files/Pods-Zwallet/Pods-Zwallet.debug.xcconfig"; sourceTree = "<group>"; };
+		65AB3502351546A6B3DEBA46 /* Pods_Zwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zwallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E72773E72278AE8A15E433A /* Pods-Zwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zwallet.release.xcconfig"; path = "Target Support Files/Pods-Zwallet/Pods-Zwallet.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03859B5B2A8277C7000031C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4DB1FF3D9CA6D6F7F9BF70 /* Pods_Zwallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0300585C2A87494F002DBA5E /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				03A927E92A828A1C00C5F416 /* LoginViewController.swift */,
+				03A927EF2A829C0600C5F416 /* RegisterViewController.swift */,
+				032B62072A873D4200F0D895 /* ForgotViewController.swift */,
+				0300585D2A874996002DBA5E /* NewPasswordViewController.swift */,
+				030058752A88AC71002DBA5E /* OTPViewController.swift */,
+				03859B672A8277C7000031C2 /* Main.storyboard */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		0300585F2A875F79002DBA5E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				030058622A875F98002DBA5E /* HomeViewController.swift */,
+				0300586F2A889313002DBA5E /* ProfileViewController.swift */,
+				030058682A87BC63002DBA5E /* HistoryTableViewCell.swift */,
+				030058602A875F8C002DBA5E /* Home.storyboard */,
+				030058692A87BC63002DBA5E /* HistoryTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0329C7332A89FDD500D10E10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				037C22E02A90910C0010A5E4 /* User */,
+				0329C73E2A8A090F00D10E10 /* Auth */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0329C73E2A8A090F00D10E10 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				037C22DE2A908A350010A5E4 /* Constant.swift */,
+				037C22DB2A9086490010A5E4 /* LogOut */,
+				0387D1012A8F53F400EA1173 /* ForgotPassword */,
+				0329C7482A8A25A800D10E10 /* SignUp */,
+				0329C7472A8A240200D10E10 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0329C7472A8A240200D10E10 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0329C7412A8A0A0600D10E10 /* LoginResponse.swift */,
+				0329C7372A8A01C400D10E10 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0329C7482A8A25A800D10E10 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0329C74B2A8A25C800D10E10 /* SignUpResponse.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		037C22DB2A9086490010A5E4 /* LogOut */ = {
+			isa = PBXGroup;
+			children = (
+				037C22DC2A9086600010A5E4 /* LogoutResponse.swift */,
+			);
+			path = LogOut;
+			sourceTree = "<group>";
+		};
+		037C22E02A90910C0010A5E4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				037C22E32A9094360010A5E4 /* ProfileResponse.swift */,
+				037C22E52A9094A20010A5E4 /* ProfileModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		037C22E72A90FF7F0010A5E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0329C7432A8A0A2700D10E10 /* AuthApi.swift */,
+				0329C7452A8A0E0F00D10E10 /* AuthApiServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		037C22E82A90FFC60010A5E4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				037C22E92A910FC30010A5E4 /* CustomView */,
+				0300585C2A87494F002DBA5E /* Registration */,
+				0300585F2A875F79002DBA5E /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		037C22E92A910FC30010A5E4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				03A927EB2A82905100C5F416 /* CustomButton.swift */,
+				03A927F32A82B09900C5F416 /* RoundedView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		03859B552A8277C7000031C2 = {
+			isa = PBXGroup;
+			children = (
+				03859B602A8277C7000031C2 /* Zwallet */,
+				03859B5F2A8277C7000031C2 /* Products */,
+				13DEA5A6BED59032ACBB2E14 /* Pods */,
+				6884BD3F13346B505B6EB0BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03859B5F2A8277C7000031C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03859B5E2A8277C7000031C2 /* Zwallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03859B602A8277C7000031C2 /* Zwallet */ = {
+			isa = PBXGroup;
+			children = (
+				03AC4A372A8F2F2F0006E5E4 /* Extension */,
+				037C22E72A90FF7F0010A5E4 /* Services */,
+				0329C7332A89FDD500D10E10 /* Models */,
+				037C22E82A90FFC60010A5E4 /* ViewController */,
+				03859B612A8277C7000031C2 /* AppDelegate.swift */,
+				03859B632A8277C7000031C2 /* SceneDelegate.swift */,
+				03859B652A8277C7000031C2 /* ViewController.swift */,
+				03859B6A2A8277C8000031C2 /* Assets.xcassets */,
+				03859B6C2A8277C8000031C2 /* LaunchScreen.storyboard */,
+				03859B6F2A8277C8000031C2 /* Info.plist */,
+			);
+			path = Zwallet;
+			sourceTree = "<group>";
+		};
+		0387D1012A8F53F400EA1173 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				0387D1022A8F540900EA1173 /* ForgotPasswordResponse.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		03AC4A372A8F2F2F0006E5E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03AC4A382A8F2F5D0006E5E4 /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		13DEA5A6BED59032ACBB2E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				595523033C145AD8018A7D97 /* Pods-Zwallet.debug.xcconfig */,
+				9E72773E72278AE8A15E433A /* Pods-Zwallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6884BD3F13346B505B6EB0BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65AB3502351546A6B3DEBA46 /* Pods_Zwallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03859B5D2A8277C7000031C2 /* Zwallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03859B722A8277C8000031C2 /* Build configuration list for PBXNativeTarget "Zwallet" */;
+			buildPhases = (
+				840323FF6BF842D8F96F82DC /* [CP] Check Pods Manifest.lock */,
+				03859B5A2A8277C7000031C2 /* Sources */,
+				03859B5B2A8277C7000031C2 /* Frameworks */,
+				03859B5C2A8277C7000031C2 /* Resources */,
+				D700D60FBD2BE2DE95D0047C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zwallet;
+			productName = Zwallet;
+			productReference = 03859B5E2A8277C7000031C2 /* Zwallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03859B562A8277C7000031C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					03859B5D2A8277C7000031C2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 03859B592A8277C7000031C2 /* Build configuration list for PBXProject "Zwallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03859B552A8277C7000031C2;
+			productRefGroup = 03859B5F2A8277C7000031C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03859B5D2A8277C7000031C2 /* Zwallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03859B5C2A8277C7000031C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03859B6E2A8277C8000031C2 /* LaunchScreen.storyboard in Resources */,
+				0300586B2A87BC63002DBA5E /* HistoryTableViewCell.xib in Resources */,
+				03859B6B2A8277C8000031C2 /* Assets.xcassets in Resources */,
+				03859B692A8277C7000031C2 /* Main.storyboard in Resources */,
+				030058612A875F8C002DBA5E /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		840323FF6BF842D8F96F82DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zwallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D700D60FBD2BE2DE95D0047C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zwallet/Pods-Zwallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zwallet/Pods-Zwallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zwallet/Pods-Zwallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03859B5A2A8277C7000031C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A927EA2A828A1C00C5F416 /* LoginViewController.swift in Sources */,
+				03859B662A8277C7000031C2 /* ViewController.swift in Sources */,
+				030058762A88AC71002DBA5E /* OTPViewController.swift in Sources */,
+				03A927F42A82B09900C5F416 /* RoundedView.swift in Sources */,
+				03859B622A8277C7000031C2 /* AppDelegate.swift in Sources */,
+				0329C7422A8A0A0600D10E10 /* LoginResponse.swift in Sources */,
+				03A927F02A829C0600C5F416 /* RegisterViewController.swift in Sources */,
+				0329C7462A8A0E0F00D10E10 /* AuthApiServices.swift in Sources */,
+				0329C7442A8A0A2700D10E10 /* AuthApi.swift in Sources */,
+				030058632A875F98002DBA5E /* HomeViewController.swift in Sources */,
+				0300586A2A87BC63002DBA5E /* HistoryTableViewCell.swift in Sources */,
+				032B62082A873D4200F0D895 /* ForgotViewController.swift in Sources */,
+				03AC4A392A8F2F5D0006E5E4 /* StringExtension.swift in Sources */,
+				03859B642A8277C7000031C2 /* SceneDelegate.swift in Sources */,
+				0387D1032A8F540900EA1173 /* ForgotPasswordResponse.swift in Sources */,
+				037C22E62A9094A20010A5E4 /* ProfileModel.swift in Sources */,
+				037C22E42A9094360010A5E4 /* ProfileResponse.swift in Sources */,
+				0329C74C2A8A25C800D10E10 /* SignUpResponse.swift in Sources */,
+				0329C7382A8A01C400D10E10 /* LoginModel.swift in Sources */,
+				03A927EC2A82905100C5F416 /* CustomButton.swift in Sources */,
+				037C22DD2A9086600010A5E4 /* LogoutResponse.swift in Sources */,
+				037C22DF2A908A350010A5E4 /* Constant.swift in Sources */,
+				030058702A889313002DBA5E /* ProfileViewController.swift in Sources */,
+				0300585E2A874996002DBA5E /* NewPasswordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03859B672A8277C7000031C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03859B682A8277C7000031C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03859B6C2A8277C8000031C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03859B6D2A8277C8000031C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03859B702A8277C8000031C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03859B712A8277C8000031C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03859B732A8277C8000031C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595523033C145AD8018A7D97 /* Pods-Zwallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zwallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wtfia.Zwallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		03859B742A8277C8000031C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E72773E72278AE8A15E433A /* Pods-Zwallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zwallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wtfia.Zwallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03859B592A8277C7000031C2 /* Build configuration list for PBXProject "Zwallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03859B702A8277C8000031C2 /* Debug */,
+				03859B712A8277C8000031C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03859B722A8277C8000031C2 /* Build configuration list for PBXNativeTarget "Zwallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03859B732A8277C8000031C2 /* Debug */,
+				03859B742A8277C8000031C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03859B562A8277C7000031C2 /* Project object */;
+}

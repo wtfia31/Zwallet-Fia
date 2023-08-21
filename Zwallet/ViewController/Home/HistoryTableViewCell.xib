@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL_ID" rowHeight="76" id="KGk-i7-Jjw" customClass="HistoryTableViewCell" customModule="Zwallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic2" translatesAutoresizingMaskIntoConstraints="NO" id="y6Z-Ib-JXg">
+                        <rect key="frame" x="10" y="10" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="aqm-SZ-czh"/>
+                            <constraint firstAttribute="height" constant="52" id="t8U-sN-7h5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OEh-Ed-gXX">
+                        <rect key="frame" x="82" y="13.000000000000004" width="44.333333333333343" height="46.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4b-Hs-YTP">
+                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="19.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-sC-D4Z">
+                                <rect key="frame" x="0.0" y="29.333333333333336" width="44.333333333333336" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="SecondaryText60"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8M0-9L-4oM">
+                        <rect key="frame" x="267" y="26.333333333333336" width="38" height="19.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="y6Z-Ib-JXg" secondAttribute="bottom" constant="10" id="AUP-li-LAi"/>
+                    <constraint firstItem="OEh-Ed-gXX" firstAttribute="leading" secondItem="y6Z-Ib-JXg" secondAttribute="trailing" constant="20" id="HRj-8v-ojY"/>
+                    <constraint firstItem="y6Z-Ib-JXg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="agj-30-e2X"/>
+                    <constraint firstItem="y6Z-Ib-JXg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="czd-pK-DBA"/>
+                    <constraint firstItem="y6Z-Ib-JXg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mb4-ht-E5M"/>
+                    <constraint firstItem="OEh-Ed-gXX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="waz-7J-pmI"/>
+                    <constraint firstItem="8M0-9L-4oM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wj8-2O-eWi"/>
+                    <constraint firstAttribute="trailing" secondItem="8M0-9L-4oM" secondAttribute="trailing" constant="15" id="zz5-A9-Qv6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="Bri-sC-D4Z" id="aGz-am-B25"/>
+                <outlet property="imageCell" destination="y6Z-Ib-JXg" id="slr-dL-g8r"/>
+                <outlet property="nameLabel" destination="g4b-Hs-YTP" id="ucM-gY-g8z"/>
+                <outlet property="priceLabel" destination="8M0-9L-4oM" id="Dje-u7-eas"/>
+            </connections>
+            <point key="canvasLocation" x="48.854961832061065" y="30.633802816901412"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pic2" width="153" height="102"/>
+        <namedColor name="SecondaryText60">
+            <color red="0.53725490196078429" green="0.54509803921568623" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
